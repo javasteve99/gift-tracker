@@ -1,0 +1,33 @@
+---
+layout: default
+title: Create Your Profile
+nav-area: home
+---
+
+<header role="banner">
+  <div class="container">
+    <h1>Gift Tracker</h1>
+    <a href="login.html" class="login">Login</a>
+  </div><!-- end of div.container -->
+</header><!-- end of header[role=banner] -->
+
+<div role="main">
+  <div class="container">
+    <form id="create-your-profile">
+      <legend>Create Your Profile</legend>
+      <div class="input-wrap">
+        <label for="current-user-name">Name:</label>
+        <input type="text" name="current-user-name" id="current-user-name" required />
+      </div>
+      <div class="input-wrap">
+        <label for="current-user-location">Location:</label>
+        <input type="text" name="current-user-location" id="current-user-location" required />
+      </div>
+      <div class="input-wrap">
+        <label for="current-user-age">Age:</label>
+        <input type="text" name="current-user-age" id="current-user-age" required />
+      </div>
+      <button type="submit" name="finish-your-profile" id="finish-your-profile">Finish Your Profile</button>
+    </form><!-- end of form#create-your-profile -->
+  </div><!-- end of div.container -->
+</div><!-- end of div[role=main] -->

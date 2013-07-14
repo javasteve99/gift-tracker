@@ -78,3 +78,81 @@ h6 { @include heading-sixth; }
 
 
 
+/* ============================================================================================== */
+/* Create Your Profile Page Styles                                                                */
+/* ============================================================================================== */
+
+#create-your-profile {
+  width: columns(4);
+  margin: 0 auto;
+  background: $callout;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+
+
+
+/* ============================================================================================== */
+/* Your List Page Styles                                                                          */
+/* ============================================================================================== */
+
+#add-a-gift {
+  background: $callout;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.gift-list {
+  background-color: $callout;
+  border-radius: 8px;
+  padding: 1em;
+
+  h1 {
+    @include heading-third;
+    margin-bottom: 1em;
+  }
+
+  .gifts {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .gift {
+    margin: 0;
+    padding: 1em 0;
+    border-top: 1px solid $darkest;
+    @include clearfix;
+
+    figure {
+      width: columns(1);
+      height: 0;
+      padding-top: columns(1);
+      float: left;
+      margin-right: gutter();
+      display: block;
+      background-color: darken($callout, 5%);
+      border-radius: 4px;
+    }
+
+    h2 {
+      @include heading-fourth;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .info-wrap {
+      width: columns(4);
+      float: left;
+      margin-right: gutter();
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $darkest;
+    }
+  }
+}
+
+

@@ -47,22 +47,27 @@ h1, h2, h3, h4, h5, h6 {
 
 @mixin heading-first {
   font-size: #{$modular-scale-up4}em;
+  font-weight: bold;
 }
 
 @mixin heading-second {
   font-size: #{$modular-scale-up3}em;
+  font-weight: bold;
 }
 
 @mixin heading-third {
   font-size: #{$modular-scale-up2}em;
+  font-weight: bold;
 }
 
 @mixin heading-fourth {
   font-size: #{$modular-scale-up1}em;
+  font-weight: bold;
 }
 
 @mixin heading-fifth {
   font-size: #{$modular-scale-base}em;
+  font-weight: bold;
 }
 
 @mixin heading-sixth {
@@ -70,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   color: lighten($base-text-color, 25%);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 

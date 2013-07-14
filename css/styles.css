@@ -205,8 +205,9 @@ legend {
   width: 100%;
   padding: 0;
   margin: 0 0 0.71875em 0;
-  font-size: 1.4375em;
-  border: 0; }
+  border: 0;
+  font-size: 1.625em;
+  font-weight: bold; }
 
 .input-wrap {
   margin-bottom: 1.4375em; }
@@ -436,25 +437,31 @@ select:focus:invalid {
     clear: both; }
 
 h1 {
-  font-size: 2.625em; }
+  font-size: 2.625em;
+  font-weight: bold; }
 
 h2 {
-  font-size: 2.3125em; }
+  font-size: 2.3125em;
+  font-weight: bold; }
 
 h3 {
-  font-size: 1.625em; }
+  font-size: 1.625em;
+  font-weight: bold; }
 
 h4 {
-  font-size: 1.4375em; }
+  font-size: 1.4375em;
+  font-weight: bold; }
 
 h5 {
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: bold; }
 
 h6 {
   font-size: 0.875em;
   color: #8c8c8c;
   letter-spacing: 0.1em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 [role="main"] {
   padding: 2em 0; }
@@ -477,6 +484,7 @@ h6 {
     clear: both; }
   [role="banner"] h1 {
     font-size: 1.625em;
+    font-weight: bold;
     color: #049cdb;
     margin: 0.5em 0;
     float: left; }
@@ -498,6 +506,66 @@ h6 {
   background: #eeeeee;
   padding: 1em;
   border-radius: 8px; }
+
+/* ============================================================================================== */
+/* Create Your Profile Page Styles                                                                */
+/* ============================================================================================== */
+#create-your-profile {
+  width: 66%;
+  margin: 0 auto;
+  background: #eeeeee;
+  padding: 1em;
+  border-radius: 8px; }
+
+/* ============================================================================================== */
+/* Your List Page Styles                                                                          */
+/* ============================================================================================== */
+#add-a-gift {
+  background: #eeeeee;
+  padding: 1em;
+  border-radius: 8px; }
+
+.gift-list {
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 1em; }
+  .gift-list h1 {
+    font-size: 1.625em;
+    font-weight: bold;
+    margin-bottom: 1em; }
+  .gift-list .gifts {
+    list-style-type: none;
+    margin-left: 0; }
+  .gift-list .gift {
+    margin: 0;
+    padding: 1em 0;
+    border-top: 1px solid black;
+    *zoom: 1; }
+    .gift-list .gift:before, .gift-list .gift:after {
+      content: " ";
+      display: table; }
+    .gift-list .gift:after {
+      clear: both; }
+    .gift-list .gift figure {
+      width: 15%;
+      height: 0;
+      padding-top: 15%;
+      float: left;
+      margin-right: 2%;
+      display: block;
+      background-color: #e1e1e1;
+      border-radius: 4px; }
+    .gift-list .gift h2 {
+      font-size: 1.4375em;
+      font-weight: bold; }
+    .gift-list .gift p {
+      margin-bottom: 0; }
+    .gift-list .gift .info-wrap {
+      width: 66%;
+      float: left;
+      margin-right: 2%; }
+    .gift-list .gift:last-of-type {
+      border-bottom: 1px solid black; }
 
 /* Helper Classes =============================================================================== */
 .hide {
