@@ -36,6 +36,7 @@ label, input, button, select, textarea {
 label {
   display: block;
   margin-bottom: 0.25em;
+  font-size: #{$modular-scale-down1}em;
 }
 
 select,
@@ -56,10 +57,11 @@ input[type="tel"],
 input[type="color"] {
   @include inline-block;
   height: $base-line-height;
-  padding: 0.1em 0.25em;
+  padding: 0.25em;
   font-size: inherit;
   line-height: inherit;
   vertical-align: middle;
+  border-radius: 4px;
 }
 
 input, textarea {
@@ -200,8 +202,15 @@ input[type="submit"] {
   cursor: pointer;
   display: block;
   width: 100%;
-  height: $base-line-height*1.5;
-  line-height: $base-line-height*1.5;
+  height: $base-line-height*1.2;
+  line-height: $base-line-height*1.2;
+  background-color: $primary;
+  border-radius: 4px;
+  border: 1px solid darken($primary, 10%);
+  color: $lightest;
+  font-weight: bold;
+  font-size: #{$modular-scale-up1}em;
+  padding: 0;
 }
 
 

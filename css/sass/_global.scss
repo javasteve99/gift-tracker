@@ -44,13 +44,13 @@ h6 { @include heading-sixth; }
   h1 {
     @include heading-third;
     color: $primary;
-    margin: 0.25em 0;
+    margin: 0.5em 0;
     float: left;
   }
 
   .login {
     float: right;
-    margin-top: 1.125em;
+    margin-top: 1.625em;
   }
 }
 
@@ -72,6 +72,7 @@ h6 { @include heading-sixth; }
   float: right;
   background: $callout;
   padding: 1em;
+  border-radius: 8px;
 }
 
 
