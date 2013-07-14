@@ -15,16 +15,23 @@
 
 
 /* ============================================================================================== */
-/* Demo Styles                                                                                    */
+/* Header Styles                                                                                  */
 /* ============================================================================================== */
 
 [role="banner"] {
   border-bottom: 1px solid lighten(black, 80%);
+  @include clearfix;
 
   h1 {
     @include heading-third;
     color: $primary;
     margin: 0.25em 0;
+    float: left;
+  }
+
+  .login {
+    float: right;
+    margin-top: 1.125em;
   }
 }
 

@@ -421,14 +421,24 @@ select:focus:invalid {
     clear: both; }
 
 /* ============================================================================================== */
-/* Demo Styles                                                                                    */
+/* Header Styles                                                                                  */
 /* ============================================================================================== */
 [role="banner"] {
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+  *zoom: 1; }
+  [role="banner"]:before, [role="banner"]:after {
+    content: " ";
+    display: table; }
+  [role="banner"]:after {
+    clear: both; }
   [role="banner"] h1 {
     font-size: 1.625em;
     color: #049cdb;
-    margin: 0.25em 0; }
+    margin: 0.25em 0;
+    float: left; }
+  [role="banner"] .login {
+    float: right;
+    margin-top: 1.125em; }
 
 [role="main"] {
   padding: 2em 0; }
