@@ -206,7 +206,7 @@ legend {
   padding: 0;
   margin: 0 0 0.71875em 0;
   border: 0;
-  font-size: 1.625em;
+  font-size: 1.4375em;
   font-weight: bold; }
 
 .input-wrap {
@@ -423,11 +423,22 @@ select:focus:invalid {
 /* ============================================================================================== */
 /* Global Styles                                                                                  */
 /* ============================================================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
 .container {
   margin: 0 auto;
   padding: 0 1em;
   width: 100%;
   max-width: 810px;
+  min-width: 809px;
   position: relative;
   *zoom: 1; }
   .container:before, .container:after {
@@ -487,10 +498,53 @@ h6 {
     font-weight: bold;
     color: #049cdb;
     margin: 0.5em 0;
-    float: left; }
-  [role="banner"] .login {
+    float: left;
+    width: 30.8642%; }
+  [role="banner"] .log-in-link {
     float: right;
     margin-top: 1.625em; }
+
+#log-in-form {
+  float: right;
+  width: 65.4321%;
+  *zoom: 1;
+  padding-top: 0.5em;
+  margin: 0;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
+  #log-in-form:before, #log-in-form:after {
+    content: " ";
+    display: table; }
+  #log-in-form:after {
+    clear: both; }
+  #log-in-form .input-wrap {
+    float: left;
+    width: 33.96226%;
+    margin: 0 5.66038% 0 0; }
+  #log-in-form button {
+    font-size: 0.875em;
+    float: left;
+    width: 20.75472%;
+    margin: 1.2em 0 0 0;
+    height: 1.8em;
+    line-height: 1.75em; }
+  #log-in-form input[type="email"],
+  #log-in-form input[type="password"] {
+    font-size: 0.875em;
+    height: 1.75em;
+    line-height: 1.75em; }
+  #log-in-form label {
+    height: 1.143em;
+    line-height: 1.143em;
+    margin-bottom: 0;
+    display: block; }
+  #log-in-form.show {
+    opacity: 1; }
 
 /* ============================================================================================== */
 /* Home Page Styles                                                                               */
@@ -500,7 +554,7 @@ h6 {
   width: 65.4321%;
   margin-right: 3.7037%; }
 
-#create-an-account {
+#create-an-account-form {
   width: 30.8642%;
   float: right;
   background: #eeeeee;
@@ -510,7 +564,7 @@ h6 {
 /* ============================================================================================== */
 /* Create Your Profile Page Styles                                                                */
 /* ============================================================================================== */
-#create-your-profile {
+#create-your-profile-form {
   width: 65.4321%;
   margin: 0 auto;
   background: #eeeeee;
@@ -520,7 +574,7 @@ h6 {
 /* ============================================================================================== */
 /* Your List Page Styles                                                                          */
 /* ============================================================================================== */
-#add-a-gift {
+#add-a-gift-form {
   background: #eeeeee;
   padding: 1em;
   border-radius: 8px; }

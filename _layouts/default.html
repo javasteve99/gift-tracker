@@ -19,7 +19,18 @@
 <header role="banner">
   <div class="container">
     <h1><a href="/">Gift Tracker</a></h1>
-    <a href="login.html" class="login">Login</a>
+    <a href="#" class="log-in-link" id="log-in-link">Log In</a>
+    <form id="log-in-form">
+      <div class="input-wrap">
+        <label for="log-in-email">Email:</label>
+        <input type="email" name="log-in-email" id="log-in-email" required />
+      </div>
+      <div class="input-wrap">
+        <label for="log-in-password">Password:</label>
+        <input type="password" name="log-in-password" id="log-in-password" required />
+      </div>
+      <button type="submit" name="log-in-submit" id="log-in-submit">Log In</button>
+    </form><!-- end of form#log-in-form -->
   </div><!-- end of div.container -->
 </header><!-- end of header[role=banner] -->
 
