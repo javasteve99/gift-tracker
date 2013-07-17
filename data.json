@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "email":    "steve@stevehickeydesign.com",
+      "password": "test",
+      "name":     "Steve Hickey",
+      "location": "Framingham, MA",
+      "age":      "27",
+      "gifts":    [
+        {
+          "name":     "Victorinox 7-Inch Granton Edge Santoku Knife, Rosewood Handle",
+          "link":     "http://www.amazon.com/Victorinox-7-Inch-Granton-Santoku-Rosewood/dp/B0019WZKFI/",
+          "priority": "1",
+          "note":     "Good knife, don't need the rosewood version if it's not available."
+        },
+        {
+          "name":     "The French Laundry Cookbook",
+          "link":     "http://www.amazon.com/French-Laundry-Cookbook-Thomas-Keller/dp/1579651267/",
+          "priority": "2",
+          "note":     "Hardcover is preferred, unless only softcover is available."
+        },
+        {
+          "name":     "Philips Hf3470 Wake-up Light, White",
+          "link":     "http://www.amazon.com/Philips-Hf3470-Wake-up-Light-White/dp/B003XN4RIC/",
+          "priority": "3",
+          "note":     "Must be this exact light. A substitute won't be the same."
+        },
+        {
+          "name":     "Ad Hoc at Home",
+          "link":     "http://www.amazon.com/Ad-Hoc-Home-Thomas-Keller/dp/1579653774/",
+          "priority": "4",
+          "note":     ""
+        }
+      ],
+      "groups":   [
+        {
+          "name":     "Hickey Family"
+        },
+        {
+          "name":     "Fontaine Family"
+        }
+      ]
+    },
+    {
+      "email":    "rochellehickey@gmail.com",
+      "password": "roxanne",
+      "name":     "Rochelle Hickey",
+      "location": "Framingham, MA",
+      "age":      "27",
+      "gifts":    [
+        {
+          "name":     "The Design of Everyday Things",
+          "link":     "http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107/",
+          "priority": "1",
+          "note":     "Need this book."
+        },
+        {
+          "name":     "Calphalon Wood All Purpose Turner",
+          "link":     "http://www.amazon.com/Calphalon-Wood-All-Purpose-Turner/dp/B000KGO1MC/",
+          "priority": "2",
+          "note":     "Any similar wood turner is suitable."
+        }
+      ],
+      "groups":   [
+        {
+          "name":     "Hickey Family"
+        },
+        {
+          "name":     "Fontaine Family"
+        }
+      ]
+    }
+  ]
+}
