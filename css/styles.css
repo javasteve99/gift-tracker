@@ -365,8 +365,7 @@ input[type="color"] {
   padding: 0.25em;
   font-size: inherit;
   line-height: inherit;
-  vertical-align: middle;
-  border-radius: 4px; }
+  vertical-align: middle; }
 
 input, textarea {
   width: 100%; }
@@ -392,7 +391,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   background-color: white;
-  border: 1px solid #bfbfbf; }
+  box-shadow: 0 2px 0 -1px #bbbbbb;
+  border: none; }
   textarea:focus,
   input[type="text"]:focus,
   input[type="password"]:focus,
@@ -409,6 +409,7 @@ input[type="color"] {
   input[type="tel"]:focus,
   input[type="color"]:focus {
     border-color: #049cdb;
+    box-shadow: 0 3px 0 -1px #bbbbbb;
     outline: 0;
     outline: thin dotted \9;
     /* IE6-9 */ }
@@ -501,13 +502,38 @@ input[type="submit"] {
   width: 100%;
   height: 1.725;
   line-height: 1.725;
-  background-color: #049cdb;
-  border-radius: 4px;
-  border: 1px solid #0378a9;
+  border: none;
   color: white;
-  font-weight: bold;
   font-size: 1.4375em;
-  padding: 0; }
+  font-family: "Lato-Regular", arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  outline: none;
+  background-color: #049cdb;
+  box-shadow: 0 2px 0 -1px #025577;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  button:hover, button:focus,
+  html input[type="button"]:hover,
+  html input[type="button"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #04aef4;
+    box-shadow: 0 3px 0 -1px #025577;
+    outline: none; }
+  button:active,
+  html input[type="button"]:active,
+  input[type="reset"]:active,
+  input[type="submit"]:active {
+    background-color: #049cdb;
+    box-shadow: 0 2px 0 -1px #025577;
+    outline: none; }
 
 input[disabled],
 select[disabled],
@@ -614,7 +640,9 @@ h6 {
 /* Header Styles                                                                                  */
 /* ============================================================================================== */
 [role="banner"] {
-  border-bottom: 1px solid #cccccc;
+  background-color: #049cdb;
+  border-bottom: 1px solid #025577;
+  color: white;
   *zoom: 1; }
   [role="banner"]:before, [role="banner"]:after {
     content: " ";
@@ -634,7 +662,8 @@ h6 {
     float: right;
     margin-top: 1.5em; }
   [role="banner"] a {
-    border: none; }
+    border: none;
+    color: white; }
 
 #log-in-form {
   float: right;
@@ -664,12 +693,21 @@ h6 {
     width: 20.75472%;
     margin: 1.2em 0 0 0;
     height: 1.8em;
-    line-height: 1.75em; }
+    line-height: 1.75em;
+    background-color: #04aef4; }
+    #log-in-form button:hover, #log-in-form button:focus {
+      background-color: #17b8fb; }
+    #log-in-form button:active {
+      background-color: #04aef4; }
   #log-in-form input[type="email"],
   #log-in-form input[type="password"] {
     font-size: 0.875em;
     height: 1.75em;
-    line-height: 1.75em; }
+    line-height: 1.75em;
+    box-shadow: 0 2px 0 -1px #025577; }
+    #log-in-form input[type="email"]:focus,
+    #log-in-form input[type="password"]:focus {
+      box-shadow: 0 3px 0 -1px #025577; }
   #log-in-form label {
     height: 1.143em;
     line-height: 1.143em;
