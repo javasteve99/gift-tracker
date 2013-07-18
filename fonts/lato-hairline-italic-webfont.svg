@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata></metadata>
 <defs>
-<font id="latohairline_italic" horiz-adv-x="1187" >
+<font id="Lato-Hairline-Italic" horiz-adv-x="1187" >
 <font-face units-per-em="2048" ascent="1649" descent="-399" />
 <missing-glyph horiz-adv-x="395" />
 <glyph unicode="&#xfb01;" horiz-adv-x="950" d="M784 961l-118 -961h-25l116 940h-502l-116 -930l-39 -256q-2 -8 -5.5 -10t-6.5 -2h-4l147 1198l-153 4q-5 0 -7.5 1.5t-2.5 7.5v8h165l15 112q11 93 44.5 165t82.5 119.5t113 72t137 24.5q13 0 31 -1.5t35 -4.5t32 -7t25 -9l-3 -9q-2 -6 -9 -6q-11 0 -37.5 8.5t-75.5 8.5 q-67 0 -125 -20.5t-103.5 -64.5t-77 -112.5t-45.5 -163.5l-16 -112h528z" />
@@ -250,4 +250,4 @@
 <glyph horiz-adv-x="528" d="M512 1614q46 0 73 33.5t36 83.5h16q-4 -28 -14 -53t-25 -43.5t-37 -30t-51 -11.5q-31 0 -55 18.5t-46.5 41t-45 41t-50.5 18.5q-24 0 -41.5 -9t-31.5 -25t-22.5 -37.5t-12.5 -45.5h-19q4 28 14.5 53t27 43.5t38.5 30t49 11.5q32 0 56 -18.5t46 -41t44.5 -41t50.5 -18.5z " />
 <glyph horiz-adv-x="528" d="M0 0z" />
 </font>
-</defs></svg> 
+</defs></svg>
