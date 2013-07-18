@@ -60,34 +60,78 @@
   }
 }
 
-// Usage Example
-// @include font-face(Ubuntu-Light, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Light-webfont', 300, normal);
-// @include font-face(Ubuntu-Light-Italic, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Light-Italic-webfont', 300, italic);
-// @include font-face(Ubuntu-Regular, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Regular-webfont', 400, normal);
-// @include font-face(Ubuntu-Regular-Italic, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Regular-Italic-webfont', 400, italic);
-// @include font-face(Ubuntu-Bold, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Bold-webfont', 700, normal);
-// @include font-face(Ubuntu-Bold-Italic, 'https://dl.dropbox.com/u/1220078/ubuntu-new/Ubuntu-Bold-Italic-webfont', 700, italic);
-//
-// @mixin Ubuntu-Light {
-//   font-family: 'Ubuntu-Light', arial, sans-serif;
-//   font-weight: 300; font-style: normal; }
-//
-// @mixin Ubuntu-Light-Italic {
-//   font-family: 'Ubuntu-Light-Italic', arial, sans-serif;
-//   font-weight: 300; font-style: italic; }
-//
-// @mixin Ubuntu-Regular {
-//   font-family: 'Ubuntu-Regular', arial, sans-serif;
-//   font-weight: 400; font-style: normal; }
-//
-// @mixin Ubuntu-Regular-Italic {
-//   font-family: 'Ubuntu-Regular-Italic', arial, sans-serif;
-//   font-weight: 400; font-style: italic; }
-//
-// @mixin Ubuntu-Bold {
-//   font-family: 'Ubuntu-Bold', arial, sans-serif;
-//   font-weight: 700; font-style: normal; }
-//
-// @mixin Ubuntu-Bold-Italic {
-//   font-family: 'Ubuntu-Bold-Italic', arial, sans-serif;
-//   font-weight: 700; font-style: italic; }
+
+
+
+// Fool-proof @font-face ========================================================================= /
+// http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(Lato-Hairline, '../fonts/lato-hairline-webfont', 100, normal);
+@include font-face(Lato-Hairline-Italic, '../fonts/lato-hairline-italic-webfont', 100, italic);
+@include font-face(Lato-Light, '../fonts/lato-light-webfont', 300, normal);
+@include font-face(Lato-Light-Italic, '../fonts/lato-light-italic-webfont', 300, italic);
+@include font-face(Lato-Regular, '../fonts/lato-regular-webfont', 400, normal);
+@include font-face(Lato-Regular-Italic, '../fonts/lato-regular-italic-webfont', 400, italic);
+@include font-face(Lato-Bold, '../fonts/lato-bold-webfont', 700, normal);
+@include font-face(Lato-Bold-Italic, '../fonts/lato-bold-italic-webfont', 700, italic);
+@include font-face(Lato-Black, '../fonts/lato-black-webfont', 900, normal);
+@include font-face(Lato-Black-Italic, '../fonts/lato-black-italic-webfont', 900, italic);
+
+@mixin Lato-Hairline {
+  font-family: 'Lato-Hairline', arial, sans-serif;
+  font-weight: 100; font-style: normal; }
+
+@mixin Lato-Hairline-Italic {
+  font-family: 'Lato-Hairline-Italic', arial, sans-serif;
+  font-weight: 100; font-style: italic; }
+
+@mixin Lato-Light {
+  font-family: 'Lato-Light', arial, sans-serif;
+  font-weight: 300; font-style: normal; }
+
+@mixin Lato-Light-Italic {
+  font-family: 'Lato-Light-Italic', arial, sans-serif;
+  font-weight: 300; font-style: italic; }
+
+@mixin Lato-Regular {
+  font-family: 'Lato-Regular', arial, sans-serif;
+  font-weight: 400; font-style: normal; }
+
+@mixin Lato-Regular-Italic {
+  font-family: 'Lato-Regular-Italic', arial, sans-serif;
+  font-weight: 400; font-style: italic; }
+
+@mixin Lato-Bold {
+  font-family: 'Lato-Bold', arial, sans-serif;
+  font-weight: 700; font-style: normal; }
+
+@mixin Lato-Bold-Italic {
+  font-family: 'Lato-Bold-Italic', arial, sans-serif;
+  font-weight: 700; font-style: italic; }
+
+@mixin Lato-Black {
+  font-family: 'Lato-Black', arial, sans-serif;
+  font-weight: 900; font-style: normal; }
+
+@mixin Lato-Black-Italic {
+  font-family: 'Lato-Black-Italic', arial, sans-serif;
+  font-weight: 900; font-style: italic; }
